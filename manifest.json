@@ -4,14 +4,22 @@
   "description": "Post-apocalyptic survival game",
   "start_url": "./index.html",
   "display": "fullscreen",
-  "orientation": "landscape",
+  "orientation": "portrait",
   "background_color": "#040310",
   "theme_color": "#1a0a00",
+  "categories": ["games"],
   "icons": [
     {
-      "src": "data:image/svg+xml,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'&gt;&lt;rect width='192' height='192' fill='%231a0a00'/&gt;&lt;text y='140' font-size='140' text-anchor='middle' x='96'&gt;🌙&lt;/text&gt;&lt;/svg&gt;",
+      "src": "./icon-192.png",
       "sizes": "192x192",
-      "type": "image/svg+xml"
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
     }
   ]
 }

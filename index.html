@@ -1319,6 +1319,13 @@ document.getElementById('sbtn').addEventListener('touchstart',e=>{e.preventDefau
 document.getElementById('sbtn').addEventListener('click',startGame);
 buildWorld();
 requestAnimationFrame(loop);
+
+// Register service worker
+if('serviceWorker' in navigator){
+  window.addEventListener('load',()=>{
+    navigator.serviceWorker.register('./sw.js').catch(()=>{});
+  });
+}
 </script>
 </body>
 </html>
